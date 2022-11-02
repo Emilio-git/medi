@@ -1,0 +1,66 @@
+// Обнуление
+@import '_nullstyle.scss';
+// ------------------------------------
+
+// Подключение шрифтов
+@font-face {
+   font-family: 'Gilroy';
+   src: url('../../assets/fonts/Gilroy/Gilroy-Regular.eot');
+   src: local('../../assets/fonts/Gilroy/Gilroy Regular'), local('Gilroy-Regular'),
+       url('../../assets/fonts/Gilroy/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../../assets/fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+       url('../../assets/fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Gilroy';
+   src: url('Gilroy-Medium.eot');
+   src: local('Gilroy Medium'), local('Gilroy-Medium'),
+       url('Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+       url('Gilroy-Medium.woff') format('woff'),
+       url('Gilroy-Medium.ttf') format('truetype');
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Gilroy';
+   src: url('Gilroy-Bold.eot');
+   src: local('Gilroy Bold'), local('Gilroy-Bold'),
+       url('Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+       url('Gilroy-Bold.woff') format('woff'),
+       url('Gilroy-Bold.ttf') format('truetype');
+   font-weight: bold;
+   font-style: normal;
+}
+// -------------------------------------------------------------
+
+// Написание стилей для отображения страницы
+html, body {
+   height: 100%;
+}
+
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.main {
+   flex: 1 1 auto;
+}
+
+.container {
+   max-width: 1256px;
+   padding: 0 20px;
+}
+// -----------------------------------------
+
+// UI
+body {
+   font-family: Gilroy;
+}
+// -----------------------------------------
+
